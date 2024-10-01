@@ -90,7 +90,7 @@ load_sample_data <- function() {
   data_path <- system.file("extdata", "mSHIFT_two_day_recall_data.csv", package = "mSHIFT")
 
   # Read the CSV file
-  data <- read.csv(data_path)
+  data <- read.csv(data_path, check.names = FALSE)
 
   return(data)
 }
