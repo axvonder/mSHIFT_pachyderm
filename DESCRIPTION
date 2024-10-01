@@ -13,9 +13,7 @@ LazyData: true
 Imports (CRAN packages your package depends on): 
     dplyr,
     optparse,
-    arrow,
     lubridate,
-    reticulate,
     readr,
     doParallel
 Suggests (Packages used for examples, tests, vignettes, etc): 

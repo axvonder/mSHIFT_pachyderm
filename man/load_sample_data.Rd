@@ -12,3 +12,8 @@ Data frame containing sample data.
 \description{
 This function loads the sample data included in the package.
 }
+\examples{
+\dontrun{
+sample_data <- load_sample_data()
+}
+}
