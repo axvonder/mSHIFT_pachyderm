@@ -86,17 +86,12 @@ run_analysis <- function(diseases = c('diabetes', 'CVD', 'CRC'), reductions = c(
 #' }
 #' @export
 load_sample_data <- function() {
-  data_path <- system.file("extdata", "mSHIFT_two_day_recall_data.plk", package = "mSHIFT")
-  # Get the path to the Python script
-  python_script_path <- system.file("python", "pickle_reader.py", package = "mSHIFT")
-  # Check and install 'pandas' if necessary
-  if (!reticulate::py_module_available("pandas")) {
-    reticulate::py_install("pandas")
-  }
-  # Source the Python script
-  reticulate::source_python(python_script_path)
-  # Read the pickle file using the Python function
-  data <- read_pickle_file(data_path)
+  # Update the path to the CSV file
+  data_path <- system.file("extdata", "mSHIFT_two_day_recall_data.csv", package = "mSHIFT")
+
+  # Read the CSV file
+  data <- read.csv(data_path)
+
   return(data)
 }
 
