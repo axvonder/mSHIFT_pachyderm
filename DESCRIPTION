@@ -1,12 +1,25 @@
-Package: mSHIFTpachyderm
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Package: mSHIFT
+Type: Package
+Title: micro-Simulation of the Health Impacts of Food Transformations (mSHIFT)
+Version: 0.1.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Alexander", "Vonderschmidt", email = "axvonder@gmail.com", role = c("aut", "cre"))
+Description: A package for running simulations and analyses of the health impacts of reducing red and processed meat consumption.
+Depends: R (>= 3.5.0)
+Imports: dplyr, optparse, arrow, lubridate, reticulate, readr, doParallel
+License: MIT + file LICENSE
 Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
+LazyData: true
+Imports (CRAN packages your package depends on): 
+    dplyr,
+    optparse,
+    arrow,
+    lubridate,
+    reticulate,
+    readr,
+    doParallel
+Suggests (Packages used for examples, tests, vignettes, etc): 
+    testthat,
+    knitr,
+    rmarkdown
 RoxygenNote: 7.3.2
