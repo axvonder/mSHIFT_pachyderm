@@ -68,7 +68,7 @@ mortality_prob <- function(row, mortality_table, with_diabetes, with_CVD) {
   return(mortality_prob)
 }
 
-# CRC_mortality_prob function (from mortalities.R)
+# CRC_mortality_prob function
 CRC_mortality_prob <- function(row) {
   age <- as.numeric(row['Age'])
   sex <- as.numeric(row['Sex'])
